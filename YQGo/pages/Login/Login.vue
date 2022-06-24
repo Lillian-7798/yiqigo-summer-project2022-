@@ -16,7 +16,7 @@
 				<text class="btnValue">登录</text>
 			</view>
 			<view class="registerBtn">
-				<text>注册</text>
+				<text @tap="goRegister">注册</text>
 			</view>
 		</view>
 	</view>
@@ -33,7 +33,11 @@
 
 		},
 		methods: {
-
+            goRegister(){
+				uni.navigateTo({
+					url:'/pages/Register/Register'
+				});
+			}
 		}
 	}
 </script>
